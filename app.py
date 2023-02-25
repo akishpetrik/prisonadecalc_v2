@@ -2,12 +2,12 @@ import streamlit as st
 
 st.set_page_config(page_title="Prisonade Calculator")
 st.subheader("Which Realm:")
-dim = st.radio("",('Spawn', 'Desert', 'Jungle','Ocean','Abyss'))
+dim = st.radio("",('Arctic', 'Grotto', 'Cove','Village','Fantasy'))
 st.subheader("Which Block")
-if dim=="Spawn":
+if dim=="Arctic":
      block = st.radio(
           "",
-          ('Stone-Iron Mix', 'Iron-Diamond Mix', 'Diamond-Emerald Mix','Summit Mix'))
+          ('Stone-Iron Mix', 'Iron-Diamond Mix', 'Diamond-Emerald Mix','Arctic Mix'))
      val=int(st.text_input('How Many Blocks?', 0))
      if block=='Stone-Iron Mix':
           a = int(val / 64)
@@ -48,7 +48,7 @@ if dim=="Spawn":
                st.header(f"You need {int(eme / 64):,d} Stacks of T3 Emerald")
           else:
                st.header(f"You need {int(eme / 64):,d} Stacks and {eme % 64} T3 Emerald")
-elif dim=="Desert":
+elif dim=="Grotto":
      block = st.radio(
           "",
           ('Sandstone-Copper Mix','Copper-Gold Mix','Gold-Desert Gem Mix','Desert Mix'))
@@ -96,7 +96,7 @@ elif dim=="Desert":
                st.header(f"You need {int(pri/64):,d} Stacks of T3 Copper")
           else:
                st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Desert Gem")
-elif dim=="Jungle":
+elif dim=="Cove":
      block = st.radio(
           "",
           ('Granite-Basalt Mix','Basalt-Coal Mix','Coal-Lapis Mix','Jungle Mix'))
@@ -144,7 +144,7 @@ elif dim=="Jungle":
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Lapis")
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Lapis ")
-elif dim=="Ocean":
+elif dim=="Village":
      block = st.radio(
           "",
           ('Prismarine- Pink Coral Mix','Pink Coral-Fire Coral Mix','Fire Coral-Blue Coral Mix','Ocean Mix'))
@@ -192,7 +192,7 @@ elif dim=="Ocean":
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Blue Coral")
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Blue Coral ")
-elif dim=="Abyss":
+elif dim=="Fantasy":
      block = st.radio(
           "",
           ('Void Stone-Amethyst Mix','Amethyst-Hell Rock Mix','Hell Rock-Obsidian Mix','Abyss Mix'))
