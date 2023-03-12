@@ -147,51 +147,51 @@ elif dim=="Port":
 elif dim=="Empire":
      block = st.radio(
           "",
-          ('Prismarine- Pink Coral Mix','Pink Coral-Fire Coral Mix','Fire Coral-Blue Coral Mix','Ocean Mix'))
+          ('Moss stone-Star Rock Mix','Star Rock-Aztec Relic Mix','Aztec Relic-Amethyst Mix','Empire Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
-     if block == 'Prismarine- Pink Coral Mix':
+     if block == 'Moss stone-Star Rock Mix':
           a=val*5
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Gold and Prismarine and Pink Coral")
+               st.header(f"You need {b:,d} Stacks of T3 Gold and Moss stone and Star Rock")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Prismarine and Pink Coral ")
-     elif block == "Fire Coral-Blue Coral Mix":
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Moss stone and Star Rock ")
+     elif block == "Aztec Relic-Amethyst Mix":
           a = val * 13
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Fire Coral and Blue Coral")
+               st.header(f"You need {b:,d} Stacks of T3 Aztec Relic and Amethyst")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Fire Coral and Blue Coral ")
-     elif block == "Pink Coral-Fire Coral Mix":
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Aztec Relic and Amethyst ")
+     elif block == "Star Rock-Aztec Relic Mix":
           fg=val*8
           hr=val*7
           if ((fg % 64)==0):
-               st.header(f"You need {int(fg/64):,d} Stacks of T3 Pink Coral")
+               st.header(f"You need {int(fg/64):,d} Stacks of T3 Star Rock")
           else:
-               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Pink Coral ")
+               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Star Rock ")
           if ((hr % 64)==0):
-               st.header(f"You need {int(hr/64):,d} Stacks of T3 Fire Coral")
+               st.header(f"You need {int(hr/64):,d} Stacks of T3 Aztec Relic")
           else:
-               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Fire Coral")
+               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Aztec Relic")
      else:
           mg = val * 48
           fg = val * 120
           hr = val * 78
           if ((mg % 64)==0):
-               st.header(f"You need {int(mg/64):,d} Stacks of T3 Pink Coral")
+               st.header(f"You need {int(mg/64):,d} Stacks of T3 Star Rock")
           else:
-               st.header(f"You need {int(mg / 64):,d} Stacks and {mg % 64} T3 Pink Coral")
+               st.header(f"You need {int(mg / 64):,d} Stacks and {mg % 64} T3 Star Rock")
           if ((fg % 64)==0):
-               st.header(f"You need {int(fg/64):,d} Stacks of T3 Fire Coral")
+               st.header(f"You need {int(fg/64):,d} Stacks of T3 Aztec Relic")
           else:
-               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Fire Coral ")
+               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Aztec Relic ")
           if ((hr % 64)==0):
-               st.header(f"You need {int(hr/64):,d} Stacks of T3 Blue Coral")
+               st.header(f"You need {int(hr/64):,d} Stacks of T3 Amethyst")
           else:
-               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Blue Coral ")
+               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Amethyst ")
 elif dim=="Citadel":
      block = st.radio(
           "",
