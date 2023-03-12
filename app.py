@@ -114,9 +114,9 @@ elif dim=="Port":
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 and Seashine and Oceanstone")
+               st.header(f"You need {b:,d} Stacks of T3 and Oceanstone and Seashine")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Seashine and Oceanstone ")
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Oceanstone and Seashine ")
      elif block == "Prismarine-Oceanstone Mix":
           fg=val*8
           hr=val*6
