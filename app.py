@@ -89,7 +89,7 @@ elif dim=="Ranch":
           else:
                st.header(f"You need {int(ame / 64):,d} Stacks and {ame % 64} T3 Coal ")
           if ((fd % 64)==0):
-               st.header(f"You need {int(fd/64):,d} Stacks of T3 Coal")
+               st.header(f"You need {int(fd/64):,d} Stacks of T3 Copper")
           else:
                st.header(f"You need {int(fd / 64):,d} Stacks and {fd % 64} T3 Copper")
           if ((pri % 64)==0):
