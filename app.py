@@ -7,7 +7,7 @@ st.subheader("Which Block")
 if dim=="River":
      block = st.radio(
           "",
-          ('Stone-Iron Mix', 'Iron-Diamond Mix', 'Diamond-Emerald Mix','Riber Mix'))
+          ('Stone-Iron Mix', 'Iron-Diamond Mix', 'Diamond-Emerald Mix','River Mix'))
      val=int(st.text_input('How Many Blocks?', 0))
      if block=='Stone-Iron Mix':
           a = int(val / 64)
