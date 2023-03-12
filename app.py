@@ -93,7 +93,7 @@ elif dim=="Ranch":
           else:
                st.header(f"You need {int(fd / 64):,d} Stacks and {fd % 64} T3 Copper")
           if ((pri % 64)==0):
-               st.header(f"You need {int(pri/64):,d} Stacks of T3 Coal")
+               st.header(f"You need {int(pri/64):,d} Stacks of T3 Redstone")
           else:
                st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Redstone")
 elif dim=="Port":
