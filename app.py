@@ -99,51 +99,51 @@ elif dim=="Ranch":
 elif dim=="Port":
      block = st.radio(
           "",
-          ('Granite-Basalt Mix','Basalt-Coal Mix','Coal-Lapis Mix','Jungle Mix'))
+          ('Sandstone-Prismarine Mix','Prismarine-Oceanstone Mix','Oceanstone-Seashine Mix','Port Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
-     if block == 'Granite-Basalt Mix':
+     if block == 'Sandstone-Prismarine Mix':
           a=val*4
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Granite and Basalt")
+               st.header(f"You need {b:,d} Stacks of T3 Sandstone and Prismarine")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Granite and Basalt ")
-     elif block == "Coal-Lapis Mix":
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Sandstone and Prismarine ")
+     elif block == "Prismarine-Oceanstone Mix":
           a = val * 12
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 and Coal and Lapis")
+               st.header(f"You need {b:,d} Stacks of T3 and Prismarine and Oceanstone")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Coal and Lapis ")
-     elif block == "Basalt-Coal Mix":
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Prismarine and Oceanstone ")
+     elif block == "Oceanstone-Seashine Mix":
           fg=val*8
           hr=val*6
           if ((fg % 64)==0):
-               st.header(f"You need {int(fg/64):,d} Stacks of T3 Basalt")
+               st.header(f"You need {int(fg/64):,d} Stacks of T3 Oceanstone")
           else:
-               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Basalt ")
+               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Oceanstone ")
           if ((hr % 64)==0):
-               st.header(f"You need {int(hr/64):,d} Stacks of T3 Coal")
+               st.header(f"You need {int(hr/64):,d} Stacks of T3 Seashine")
           else:
-               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Coal")
+               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Seashine")
      else:
           mg = val * 40
           fg = val * 90
           hr = val * 60
           if ((mg % 64)==0):
-               st.header(f"You need {int(mg/64):,d} Stacks of T3 Basalt")
+               st.header(f"You need {int(mg/64):,d} Stacks of T3 Prismarine")
           else:
-               st.header(f"You need {int(mg / 64):,d} Stacks and {mg % 64} T3 Basalt")
+               st.header(f"You need {int(mg / 64):,d} Stacks and {mg % 64} T3 Prismarine")
           if ((fg % 64)==0):
-               st.header(f"You need {int(fg/64):,d} Stacks of T3 Coal")
+               st.header(f"You need {int(fg/64):,d} Stacks of T3 Oceanstone")
           else:
-               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Coal ")
+               st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Oceanstone ")
           if ((hr % 64)==0):
-               st.header(f"You need {int(hr/64):,d} Stacks of T3 Lapis")
+               st.header(f"You need {int(hr/64):,d} Stacks of T3 Seashine")
           else:
-               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Lapis ")
+               st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Seashine ")
 elif dim=="Empire":
      block = st.radio(
           "",
